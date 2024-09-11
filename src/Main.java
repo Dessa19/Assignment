@@ -28,8 +28,5 @@ public class Main {
          }
 
     }
-public static void  studentNameAndGrade(String[] x,int[] y){
 
-
-}
 }
