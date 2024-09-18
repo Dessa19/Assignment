@@ -1,11 +1,11 @@
 public class TvShow extends Media {
 
-   private int seasons;
+    private int seasons;
     private int episodes;
 
 
     public TvShow( int seasons, int episodes) {
-     this.setSeasons(seasons);
+        this.setSeasons(seasons);
         this.setEpisodes(episodes);
 
     }

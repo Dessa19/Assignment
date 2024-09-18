@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
 public class Media {
-       Media(){
+    Media(){
 
-       }
-       private String title;
-       private String rating;
-       private String director;
-       private ArrayList<String> cast =new ArrayList<>();
+    }
+    private String title;
+    private String rating;
+    private String director;
+    private ArrayList<String> cast =new ArrayList<>();
 
     public Media(String title, String rating, String director) {
         this.title = title;

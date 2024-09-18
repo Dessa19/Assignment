@@ -3,22 +3,22 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-            Media media = new Media("Black Panther","PG-13","Rayn Coogler");
+        Media media = new Media("Black Panther","PG-13","Rayn Coogler");
 
         System.out.println(media.getTitle());
         System.out.println(media.getRating());
         System.out.println(media.getDirector());
 
-            ArrayList<String> casts = new ArrayList<String>();
-            casts.add("Chadwick");
-            casts.add("Shuri");
-            casts.add("Erik Killmonger");
-            casts.add("Ramonda");
+        ArrayList<String> casts = new ArrayList<String>();
+        casts.add("Chadwick");
+        casts.add("Shuri");
+        casts.add("Erik Killmonger");
+        casts.add("Ramonda");
         casts.add("W'kabi");
-            casts.add("OKoye");
-            casts.add("Dessa");
+        casts.add("OKoye");
+        casts.add("Dessa");
 
-            // remove methods
+        // remove methods
         casts.remove("Dessa");
 
         System.out.println(casts);
