@@ -1,16 +1,22 @@
 package Composition;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) {
 
         Director director = new Director("Luca","Guadagnino");
 
-        ArrayList<String> cast = new ArrayList<>(Arrays.asList("Zendaya"));
+        ArrayList<String> casts = new ArrayList<>();
+        casts.add("Zendaya");
+        casts.add("Mike Faist");
+        casts.add("Hailey");
+        casts.add("Josh");
+        casts.add("Darenll");
+        casts.add("Jordan");
 
-        Media media = new Media("Challengers","R",director,cast);
+        Media media = new Media("Challengers","R",director,casts);
         System.out.println("Movie Title: " + media.getTitle());
         System.out.println("Movie Rating: " + media.getRating());
         System.out.println("Movie Director: " + media.getDirector());
