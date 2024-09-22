@@ -7,20 +7,14 @@ public class Main {
     public static void main(String[] args) {
 
         Director director = new Director("Luca","Guadagnino");
+        ArrayList<Actor> cast = new ArrayList<>();
+        Actor zendaya =new Actor("Zendaya","Maree");
 
-        ArrayList<String> casts = new ArrayList<>();
-        casts.add("Zendaya");
-        casts.add("Mike Faist");
-        casts.add("Hailey");
-        casts.add("Josh");
-        casts.add("Darenll");
-        casts.add("Jordan");
-
-        Media media = new Media("Challengers","R",director,casts);
+        Media media = new Media("Challengers","R",director,cast);
         System.out.println("Movie Title: " + media.getTitle());
         System.out.println("Movie Rating: " + media.getRating());
         System.out.println("Movie Director: " + media.getDirector());
-        System.out.println("Movie Casts: " + media.getCast());
+        System.out.println("Movie Cast: " + zendaya);
 
         Movie movie = new Movie(2.11,"Love traingle b/n an injured tennis star-turned-coach.",94.2 );
         System.out.println("Movie Length: " + movie.getLength() + " hours");

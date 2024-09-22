@@ -7,13 +7,13 @@ public class Media {
    private String title;
    private String rating ;
    private Director director;
-   private ArrayList<String> casts;
+   private ArrayList<Actor> cast;
 
-    public Media(String title, String rating, Director director, ArrayList<String> casts) {
+    public Media(String title, String rating, Director director, ArrayList<Actor> casts) {
         this.title = title;
         this.rating = rating;
         this.director = director;
-        this.casts = casts;
+        this.cast = cast;
     }
 
     public String getTitle() {
@@ -40,11 +40,12 @@ public class Media {
         this.director = director;
     }
 
-    public ArrayList<String> getCast() {
-        return casts;
+    public ArrayList<Actor> getCast() {
+        return cast;
     }
 
-    public void setCast(ArrayList<String> cast) {
-        this.casts = cast;
+    public void setCast(ArrayList<Actor> cast) {
+        this.cast = cast;
     }
+
 }

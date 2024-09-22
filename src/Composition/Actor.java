@@ -30,8 +30,8 @@ public class Actor {
         this.lastName = lastName;
     }
 
-//    @Override
-//    public String toString() {
-//        return this.firstName + " "+ this.lastName;
-//    }
+   @Override
+    public String toString() {
+       return this.firstName + " "+ this.lastName;
+    }
 }
