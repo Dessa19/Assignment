@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetController {
 
     @GetMapping()
-    public String helloDad(){
+    public String hello(){
         return "Hello Dessalew";
     }
     @GetMapping(path =  "/lunch")
     public String lunchTime(){
-        return "what time you eat your lunch>?";
+        return "what time you eat your lunch?";
     }
 @GetMapping (path = "/bedtime")
-    public String homeYouDo(){
-        return "Thank you Dad";
+    public String timeToSleep(){
+        return "you should sleep early";
 }
 }
