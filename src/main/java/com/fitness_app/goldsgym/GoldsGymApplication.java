@@ -4,11 +4,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GoldsgymApplication {
+public class GoldsGymApplication{
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(GoldsgymApplication.class, args);
+		SpringApplication.run(GoldsGymApplication.class, args);
 	}
 
 }
