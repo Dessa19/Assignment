@@ -7,7 +7,7 @@ import lombok.Setter;
 import lombok.Getter;
 import lombok.*;
 
-//@Data
+
 @Getter
 @Setter
 @NoArgsConstructor

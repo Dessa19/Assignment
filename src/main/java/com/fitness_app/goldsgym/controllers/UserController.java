@@ -3,7 +3,7 @@ package com.fitness_app.goldsgym.controllers;
 import com.fitness_app.goldsgym.dto.UserDto;
 import com.fitness_app.goldsgym.models.User;
 import com.fitness_app.goldsgym.services.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
@@ -15,7 +15,7 @@ import java.util.Map;
 @RequestMapping("/api/users")
 
 public class UserController {
-   @Autowired
+//   @Autowired
     private UserService userService;
 
     public UserController(UserService userService) {
