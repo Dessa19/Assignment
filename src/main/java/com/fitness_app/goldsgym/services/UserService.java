@@ -1,6 +1,8 @@
 package com.fitness_app.goldsgym.services;
 
 import com.fitness_app.goldsgym.dto.UserDto;
+import com.fitness_app.goldsgym.models.User;
+
 
 import java.util.List;
 
@@ -8,10 +10,9 @@ public interface UserService {
     //CRUD operations for the user
     UserDto createUser(UserDto userDto);
     UserDto getUserById(int id);
-    List<UserDto> getAllUsers();
-
+    List<UserDto> getAllUsers();// new added code line
     UserDto updateUserAddressById(int id, String address);
-    String deleteUserById(int id);
+    String deleteUserById(int id);//new added code line
 
 
 }
