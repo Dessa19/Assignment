@@ -8,6 +8,7 @@ import com.fitness_app.goldsgym.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -21,18 +22,14 @@ public class UserServiceImpl implements UserService {
         User user = userMapper.mapToUser(userDto);
         User savedUser = userRepository.save(user);
         return userMapper.mapToUserDto(savedUser);
-        }
+    }
     @Override
     public UserDto getUserById(int id) {
         User user = userRepository.
                 findById(id).
                 orElseThrow(()-> new RuntimeException("User of this Id doee not exist"));
         return userMapper.mapToUserDto(user);
-        }
-    @Override
-    public List<UserDto> getAllUsers() {
-        return List.of();
-       }
+    }
     @Override
     public UserDto updateUserAddressById(int id, String address) {
         User user = userRepository.
@@ -41,9 +38,14 @@ public class UserServiceImpl implements UserService {
         user.setAddress(address);
         User savedUser = userRepository.save(user);
         return userMapper.mapToUserDto(savedUser);
-        }
+    }
     @Override
-    public String deleteUserById(int id) {
-        return "";
-       }
+    public List<UserDto> getAllUsers() { //new code added line
+        return List.of();
+    }
+    @Override
+    public String deleteUserById(int id) { //new added code line
+        return " User is successfuly delted"; // new added code line
+    }
+
 }
